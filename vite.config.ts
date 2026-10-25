@@ -4,23 +4,13 @@ import path from "path";
 
 export default defineConfig(({ mode }) => ({
   base: mode === "production" ? "/Portfolio/" : "/",
-
   server: {
     host: "::",
     port: 8080,
-    hmr: {
-      overlay: false,
-    },
+    hmr: { overlay: false },
   },
-
-  plugins: [
-    react(),
-    ...(mode === "development" ? [componentTagger()] : []),
-  ],
-
+  plugins: [react()],
   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+    alias: { "@": path.resolve(__dirname, "./src") },
   },
 }));
