@@ -19,17 +19,16 @@ const AboutSection = () => {
             <div className="text-muted-foreground mb-2">$ cat about.txt</div>
             <div className="space-y-2">
               <p>
-                I am a passionate cybersecurity and digital forensics student with a deep 
+                I am a passionate cybersecurity and digital forensics student with a deep
                 curiosity for understanding how systems work and how to protect them.
               </p>
               <p>
-                My journey in tech started with breaking things (ethically, of course) 
+                My journey in tech started with breaking things (ethically, of course)
                 and evolved into a mission to build secure, resilient systems.
               </p>
               <p>
-                When I'm not hunting vulnerabilities, you'll find me competing in CTFs, 
-                contributing to open-source security tools, or exploring the latest 
-                Linux distributions.
+                When I'm not hunting vulnerabilities, you'll find me reading vulnerabilties,
+                competing in CTFs, or exploring the latest Linux distributions.
               </p>
             </div>
           </div>

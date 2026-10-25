@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
 import MenuBar from "@/components/MenuBar";
 import HeroSection from "@/components/HeroSection";
@@ -10,22 +10,25 @@ import ProofOfWorkSection from "@/components/ProofOfWorkSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-const Index = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [showContent, setShowContent] = useState(false);
+const readLoaded = () => {
+  try {
+    return sessionStorage.getItem("hasLoaded") === "true";
+  } catch {
+    return false;
+  }
+};
 
-  useEffect(() => {
-    // Check if this is a page refresh or initial load
-    const hasLoaded = sessionStorage.getItem("hasLoaded");
-    
-    if (hasLoaded) {
-      setIsLoading(false);
-      setShowContent(true);
-    }
-  }, []);
+const Index = () => {
+  const alreadyLoaded = readLoaded();
+  const [isLoading, setIsLoading] = useState(!alreadyLoaded);
+  const [showContent, setShowContent] = useState(alreadyLoaded);
 
   const handleLoadingComplete = () => {
-    sessionStorage.setItem("hasLoaded", "true");
+    try {
+      sessionStorage.setItem("hasLoaded", "true");
+    } catch {
+      /* storage unavailable (private mode); ignore */
+    }
     setIsLoading(false);
     setTimeout(() => setShowContent(true), 100);
   };

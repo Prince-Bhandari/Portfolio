@@ -11,36 +11,36 @@ interface TimelineItem {
 
 const TimelineSection = () => {
   const timelineData: TimelineItem[] = [
+    // {
+    //   year: "2024",
+    //   title: "Security Analyst Intern",
+    //   organization: "CyberDefense Corp",
+    //   description: "Performed vulnerability assessments and incident response.",
+    //   type: "work",
+    // },
+    // {
+    //   year: "2024",
+    //   title: "CompTIA Security+ Certified",
+    //   organization: "CompTIA",
+    //   description: "Industry-standard cybersecurity certification.",
+    //   type: "certification",
+    // },
     {
-      year: "2024",
-      title: "Security Analyst Intern",
-      organization: "CyberDefense Corp",
-      description: "Performed vulnerability assessments and incident response.",
-      type: "work",
-    },
-    {
-      year: "2024",
-      title: "CompTIA Security+ Certified",
-      organization: "CompTIA",
-      description: "Industry-standard cybersecurity certification.",
-      type: "certification",
-    },
-    {
-      year: "2023",
-      title: "B.S. Cybersecurity & Digital Forensics",
-      organization: "Tech University",
-      description: "Specializing in network security and incident response.",
+      year: "2024-2028",
+      title: "B.Tech. CSE with Cybersecurity & Digital Forensics",
+      organization: "VIT Bhopal University",
+      description: "Currently pursuing B.Tech in Computer Science Engineering with a specialization in Cybersecurity & Digital Forensics, focusing on network security and incident response.",
       type: "education",
     },
+    // {
+    //   year: "2023",
+    //   title: "SOC Analyst Intern",
+    //   organization: "SecureNet Solutions",
+    //   description: "Monitored security events and investigated alerts.",
+    //   type: "work",
+    // },
     {
-      year: "2023",
-      title: "SOC Analyst Intern",
-      organization: "SecureNet Solutions",
-      description: "Monitored security events and investigated alerts.",
-      type: "work",
-    },
-    {
-      year: "2022",
+      year: "2026",
       title: "CEH Certified",
       organization: "EC-Council",
       description: "Certified Ethical Hacker credential.",

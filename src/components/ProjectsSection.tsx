@@ -54,11 +54,11 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-8 px-4">
-      <RetroWindow title="Projects_Folder" className="max-w-5xl mx-auto">
+      <RetroWindow title="Projects_Folder (placeholders)" className="max-w-5xl mx-auto">
         <div className="space-y-4">
           <div className="flex items-center gap-2 text-xs uppercase font-bold text-muted-foreground border-b border-foreground pb-1">
             <Folder size={14} />
-            <span>:: Project Directory ::</span>
+            <span>:: Project Directory (Note: These projects are placeholders) ::</span>
             <span className="ml-auto">{projects.length} items</span>
           </div>
 

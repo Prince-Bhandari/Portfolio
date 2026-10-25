@@ -35,11 +35,11 @@ const ProofOfWorkSection = () => {
 
               <div className="grid grid-cols-2 gap-2 text-center text-xs">
                 <div className="border border-foreground p-2">
-                  <div className="font-retro text-xl">42</div>
+                  <div className="font-retro text-xl">x</div>
                   <div className="text-muted-foreground uppercase">Repos</div>
                 </div>
                 <div className="border border-foreground p-2">
-                  <div className="font-retro text-xl">1.2k</div>
+                  <div className="font-retro text-xl">x</div>
                   <div className="text-muted-foreground uppercase">Commits</div>
                 </div>
               </div>
@@ -51,9 +51,8 @@ const ProofOfWorkSection = () => {
                   {Array.from({ length: 52 }).map((_, i) => (
                     <div
                       key={i}
-                      className={`w-2 h-2 border border-foreground ${
-                        Math.random() > 0.5 ? "bg-foreground" : "bg-background"
-                      }`}
+                      className={`w-2 h-2 border border-foreground ${Math.random() > 0.5 ? "bg-foreground" : "bg-background"
+                        }`}
                     />
                   ))}
                 </div>
@@ -97,21 +96,21 @@ const ProofOfWorkSection = () => {
                 <div className="space-y-1">
                   <div className="flex justify-between text-xs border border-foreground p-2">
                     <span>Easy</span>
-                    <span className="font-bold">127</span>
+                    <span className="font-bold">x</span>
                   </div>
                   <div className="flex justify-between text-xs border border-foreground p-2">
                     <span>Medium</span>
-                    <span className="font-bold">89</span>
+                    <span className="font-bold">x</span>
                   </div>
                   <div className="flex justify-between text-xs border border-foreground p-2">
                     <span>Hard</span>
-                    <span className="font-bold">23</span>
+                    <span className="font-bold">x</span>
                   </div>
                 </div>
               </div>
 
               <div className="border border-foreground p-2 text-center">
-                <div className="font-retro text-2xl">239</div>
+                <div className="font-retro text-2xl">x</div>
                 <div className="text-xs text-muted-foreground uppercase">Total Solved</div>
               </div>
 
@@ -148,8 +147,8 @@ const ProofOfWorkSection = () => {
 
               <div className="border border-foreground p-3 text-center">
                 <div className="text-xs text-muted-foreground uppercase mb-1">Rank</div>
-                <div className="font-retro text-2xl">Top 5%</div>
-                <div className="text-xs text-muted-foreground">#4,521 Global</div>
+                <div className="font-retro text-2xl">Top x%</div>
+                <div className="text-xs text-muted-foreground">#x Global</div>
               </div>
 
               <div className="grid grid-cols-3 gap-1">
@@ -166,7 +165,7 @@ const ProofOfWorkSection = () => {
               </div>
 
               <div className="text-xs text-center text-muted-foreground">
-                +12 more badges
+                +x more badges
               </div>
 
               <a

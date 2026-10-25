@@ -17,10 +17,9 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#" },
-    { icon: Linkedin, label: "LinkedIn", href: "#" },
-    { icon: Twitter, label: "Twitter", href: "#" },
-    { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
+    { icon: Github, label: "GitHub", href: "https://github.com/prince-bhandari" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/prince--bhandari/" },
+    { icon: Mail, label: "Email", href: "mailto:princebhandari67@gmail.com" },
   ];
 
   return (

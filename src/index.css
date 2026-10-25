@@ -88,6 +88,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-padding-top: 3rem;
+  }
+
   body {
     @apply bg-background text-foreground font-mono antialiased;
     font-family: 'IBM Plex Mono', monospace;
@@ -95,16 +99,21 @@
   }
 
   /* Custom cursor styles */
-  a, button, [role="button"] {
+  a,
+  button,
+  [role="button"] {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' d='M0 0h3v3H0zM3 3h3v3H3zM6 6h3v3H6zM9 9h3v3H9zM3 9h3v3H3zM6 12h3v3H6z'/%3E%3C/svg%3E"), pointer;
   }
 
-  .dark a, .dark button, .dark [role="button"] {
+  .dark a,
+  .dark button,
+  .dark [role="button"] {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M0 0h3v3H0zM3 3h3v3H3zM6 6h3v3H6zM9 9h3v3H9zM3 9h3v3H3zM6 12h3v3H6z'/%3E%3C/svg%3E"), pointer;
   }
 }
 
 @layer components {
+
   /* Retro window styles */
   .retro-window {
     @apply bg-card border-2 border-foreground;
@@ -198,13 +207,11 @@
   .scanlines::before {
     content: '';
     @apply fixed inset-0 pointer-events-none z-50;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      hsl(var(--scanline) / 0.03) 2px,
-      hsl(var(--scanline) / 0.03) 4px
-    );
+    background: repeating-linear-gradient(0deg,
+        transparent,
+        transparent 2px,
+        hsl(var(--scanline) / 0.03) 2px,
+        hsl(var(--scanline) / 0.03) 4px);
   }
 
   /* Boot screen styles */
@@ -217,8 +224,15 @@
   }
 
   @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
   }
 
   /* Progress bar for loading */
@@ -232,8 +246,13 @@
   }
 
   @keyframes loading {
-    0% { width: 0%; }
-    100% { width: 100%; }
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
   }
 
   /* Pixel fade animation */
@@ -242,13 +261,20 @@
   }
 
   @keyframes pixelFade {
-    0% { opacity: 0; transform: scale(0.95); }
-    100% { opacity: 1; transform: scale(1); }
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
   /* Desktop grid pattern */
   .desktop-grid {
-    background-image: 
+    background-image:
       linear-gradient(hsl(var(--border) / 0.1) 1px, transparent 1px),
       linear-gradient(90deg, hsl(var(--border) / 0.1) 1px, transparent 1px);
     background-size: 20px 20px;

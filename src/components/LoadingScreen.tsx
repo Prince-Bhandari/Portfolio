@@ -48,7 +48,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
           <div className="font-retro text-xl mb-4 text-center border-b-2 border-foreground pb-2">
             PORTFOLIO OS
           </div>
-          
+
           <div className="font-retro text-sm space-y-1 mb-6 min-h-[150px]">
             {bootLines.map((line, index) => (
               <div key={index} className="flex items-center gap-2">
@@ -74,7 +74,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         </div>
 
         <div className="font-retro text-xs text-center mt-4 text-muted-foreground">
-          © 2024 Portfolio Systems Inc.
+          © 2026 Portfolio Systems Inc.
         </div>
       </div>
     </div>
